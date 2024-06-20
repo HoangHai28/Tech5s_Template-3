@@ -33,8 +33,9 @@ section {
   height: auto;
   object-fit: cover;
 }
-.endow {
-  width: 50%;
+.contact:hover {
+  background: #0A486F;
+  
 }
 
   .autoplay-progress {
