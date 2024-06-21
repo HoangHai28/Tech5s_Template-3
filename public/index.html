@@ -1,221 +1,645 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="style.css" rel="stylesheet">
-  <link href="main.css" rel="stylesheet">
-  <script src="./js/main.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+    <script src="./js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-<body>
+  <body>
     <!-- header -->
     <section>
-        <div class=" container flex justify-center items-center mt-5">
-            <div class="mx-0">
-                <img src="img/tem2_1.png">
-            </div>
-            <div class="flex justify-center items-center">
-                <ul class="md:flex hidden  font-semibold box_mobi ">
-                    <li class="mx-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100">
-                        <a href="#">Ưu đãi</a>
-                    </li>
-                    <li class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100">
-                        <a href="#">Dịch vụ</a>
-                    </li>
-                    <li class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100">
-                        <a href="#">Giới thiệu</a>
-                    </li>
-                    <li class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100">
-                        <a href="#">Đội ngũ bác sĩ</a>
-                    </li>
-                    <li class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100">
-                        <a href="#">Bảng giá</a>
-                    </li>
-                    <li class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100">
-                        <a href="#">Thư viện</a>
-                    </li>
-                    <li class=" mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-200">
-                        <a href="#">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <a href="tel:+19001806" class="mx-0">
-                    <div class="flex  bg-button transform transition-transform duration-300 hover:scale-110 rounded-3xl drop-shadow-lg shadow-black mx-0">
-                    <div class="h-auto w-auto flex justify-center items-center pl-2  ">
-                        <img src="img/phone.png">
-                    </div>
-                    <button class="pr-4 pl-2 py-2 font-semibold text-white text-xs sm:text-base  ">
-                        Gọi 1900 1806
-                    </button>
-                </div>
-                </a>
-                <div class="lg:hidden cursor-pointer px-2 sm:px-4 show_Menu">
-                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="size-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-                </div>
-                
-            </div>
+      <div class="container flex justify-between md:mt-5">
+        <div class="mx-0">
+          <img src="img/tem2_1.png" class="lg:w-auto w-2/3" />
         </div>
+        <div class="flex justify-center items-center">
+          <ul class="md:flex hidden font-semibold box_mobi">
+            <li
+              class="mx-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100"
+            >
+              <a href="#">Ưu đãi</a>
+            </li>
+            <li
+              class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100"
+            >
+              <a href="#">Dịch vụ</a>
+            </li>
+            <li
+              class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100"
+            >
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li
+              class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100"
+            >
+              <a href="#">Đội ngũ bác sĩ</a>
+            </li>
+            <li
+              class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100"
+            >
+              <a href="#">Bảng giá</a>
+            </li>
+            <li
+              class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100"
+            >
+              <a href="#">Thư viện</a>
+            </li>
+            <li
+              class="mr-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-200"
+            >
+              <a href="#">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="tel:+19001806" class="">
+            <div
+              class="flex bg-bt transform transition-transform duration-300 hover:scale-110 rounded-3xl drop-shadow-lg shadow-black "
+            >
+              <div
+                class="h-auto w-auto flex justify-center items-center md:pl-2 pl-1"
+              >
+                <img src="img/phone.png" />
+              </div>
+              <button
+                class="md:pr-4 md:px-2 md:py-2 font-semibold text-white text-xs sm:text-base w-auto"
+              >
+                Gọi 1900 1806
+              </button>
+            </div>
+          </a>
+          <div class="lg:hidden cursor-pointer px-2 sm:px-4 show_Menu">
+            <svg
+              id="menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- banner -->
     <section>
-        <div>
-            <div id="banner" class="swiper mSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/banner.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/banner-2.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/banner-2.jpg">
-              </div>
+      <div>
+        <div id="banner" class="swiper sbaner mSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slidebaner">
+              <img src="img/banner.png" alt="" />
             </div>
-            <div class="bt-next"></div>
-            <div class="bt-prev"></div>
-            <div class="swiper-pagination"></div>
-            <div class="autoplay-progress">
-              <svg viewBox="0 0 48 48">
-                <circle cx="24" cy="24" r="20"></circle>
-              </svg>
-              <span></span>
+            <div class="swiper-slide slidebaner">
+              <img src="img/banner-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide slidebaner">
+              <img src="img/banner-2.jpg" />
             </div>
           </div>
-          <div class=" absolute top-60 left-40">
-            <img src="img/round-2.png" class="w-auto h-auto top-2">
+          <div class="bt-next"></div>
+          <div class="bt-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
         </div>
+        <div class="absolute top-60 left-40">
+          <img src="img/round-2.png" class="w-auto h-auto top-2" />
         </div>
-        
+      </div>
     </section>
     <!-- Ưu đãi -->
-    <section class="">
-        <div class=" container flex flex-row  relative top-20">
-            <div class="flex-col w-1/3 ml-40">
-                <p class="font-semibold text-2xl">Chương trình ưu đãi: </p>
-                <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit lis<br> iaculis ac felis porta. Vulputate tellus sapien pat sit ipsum<br> molestie pharetran da volutpat semper.</p>
-                <div class="flex mt-5">
-                    <div class="dis-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:size-9 size-6 border-orange-300 border-2 bg-button text-white rounded-full px-0">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                      </svg>
-                    </div>
-                    <div class="ml-3 dis-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:size-9 size-6 border-orange-300 border-2 bg-button text-white rounded-full px-0">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                      </svg>
-                    </div>
-                  </div>
+    <section class="container mx-auto mt-20">
+      <div class="flex">
+        <div class="w-[40%]">
+          <div class=" ">
+            <p class="font-semibold text-2xl">Chương trình ưu đãi:</p>
+            <p class="text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit lis<br />
+              iaculis ac felis porta. Vulputate tellus sapien pat sit ipsum<br />
+              molestie pharetran da volutpat semper.
+            </p>
+            <div class="flex mt-5">
+              <div class="dis-prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="lg:size-9 size-6 border-orange-300 border-2 bg-bt text-white rounded-full px-0"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div class="ml-3 dis-next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="lg:size-9 size-6 border-orange-300 border-2 bg-bt text-white rounded-full px-0"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class=" w-2/3 ">
-              <div class="swiper aSwiper flex flex-row justify-start pb-40">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide  flex-col ">
-                    <img src="img/baby.png" class=" ">
-                    <div class="sale top-40 absolute drop-shadow-lg rounded-lg bg-white max-h-full grid place-items-center px-5 sa" >
-                        <p class="text-2xl font-arima dis pt-3 font-semibold sa "> Ưu đãi 50%</p>
-                        <p class="pt-2">Gói khám tổng quát</p>
-                        <p class="text-xs pt-1">Lorem ipsum dolor sit amet tarancebe</p>
-                        <p class="text-xs pt-1">consectetur adipiscing elit turpis.</p>
-                        
-                        <a href="#" class="bg-button rounded-full py-1 px-3 transform transition-transform duration-300 hover:scale-110 my-3 ">
-                            <button class=" font-semibold text-sm font-roboto text-white">Đăng ký nhận ưu đãi</button>
-                        </a>
-                    </div>
+          </div>
+        </div>
+        <div class="relative w-[60%] ">
+          <div class="w-[calc(100%)] ">
+            <div class="swiper s-sale aSwiper flex">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide slidesale flex-col relative z-10 flex container "
+                >
+                  <img src="img/baby.png" class="w-[80%]" />
+                  <div
+                    class="sale drop-shadow-lg rounded-t-3xl -mt-9 rounded-br-3xl bg-white h-auto w-[80%] sa"
+                  >
+                    <p
+                      class="text-2xl font-arima dis pt-3 font-semibold sa text-center"
+                    >
+                      Ưu đãi 50%
+                    </p>
+                    <p class="pt-2 text-center">Gói khám tổng quát</p>
+                    <p class="text-xs pt-1 text-center">
+                      Lorem ipsum dolor sit amet tarancebe
+                    </p>
+                    <p class="text-xs pt-1 text-center ">
+                      consectetur adipiscing elit turpis.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="bg-button rounded-full mt-5 mb-5 px-10 py-1 ml-2 border-2 border-orange-400 hover:text-white sa"
+                    >
+                      <button
+                        class="font-semibold text-sm font-roboto  py-2 my-3 txt "
+                      >
+                        Đăng ký nhận ưu đãi
+                      </button>
+                    </a>
                   </div>
+                </div>
 
-                  <div class="swiper-slide flex-col">
-                    <img src="img/baby.png" class="w-auto h-auto">
-                    <div class="sale absolute top-40  drop-shadow-lg rounded-lg bg-white  h-auto grid place-items-center px-5">
-                        <p class="text-2xl font-arima dis pt-3 font-semibold"> Ưu đãi 50%</p>
-                        <p class="pt-2">Gói khám tổng quát</p>
-                        <p class="text-xs pt-1">Lorem ipsum dolor sit amet tarancebe</p>
-                        <p class="text-xs pt-1">consectetur adipiscing elit turpis.</p>
-                        <a href="#" class="bg-button rounded-full py-1 px-3 transform transition-transform duration-300 hover:scale-110 my-3">
-                            <button class=" font-semibold text-sm font-roboto text-white">Đăng ký nhận ưu đãi</button>
-                        </a>
-                    </div>
+                <div
+                  class="swiper-slide slidesale flex-col relative flex container  "
+                >
+                  <img src="img/baby.png" class="w-[80%]" />
+                  <div
+                    class="sale drop-shadow-lg rounded-t-3xl -mt-9 rounded-br-3xl bg-white h-auto w-[80%] sa"
+                  >
+                    <p
+                      class="text-2xl font-arima dis pt-3 font-semibold sa text-center"
+                    >
+                      Ưu đãi 50%
+                    </p>
+                    <p class="pt-2 text-center">Gói khám tổng quát</p>
+                    <p class="text-xs pt-1 text-center">
+                      Lorem ipsum dolor sit amet tarancebe
+                    </p>
+                    <p class="text-xs pt-1 text-center ">
+                      consectetur adipiscing elit turpis.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="bg-button rounded-full mt-5 mb-5 px-10 py-1 ml-2 border-2 border-orange-400"
+                    >
+                      <button
+                        class="font-semibold text-sm font-roboto  py-2 my-3 txt"
+                      >
+                        Đăng ký nhận ưu đãi
+                      </button>
+                    </a>
                   </div>
+                </div>
 
-                  <div class="swiper-slide flex-col ">
-                    <img src="img/baby.png" class="">
-                    <div class="sale absolute top-40  drop-shadow-lg rounded-lg bg-white h-auto grid place-items-center px-5">
-                        <p class="text-2xl font-arima dis pt-3 font-semibold"> Ưu đãi 50%</p>
-                        <p class="pt-2">Gói khám tổng quát</p>
-                        <p class="text-xs pt-1">Lorem ipsum dolor sit amet tarancebe</p>
-                        <p class="text-xs pt-1">consectetur adipiscing elit turpis.</p>
-                        <a href="#" class="bg-button rounded-full py-1 px-3 transform transition-transform duration-300 hover:scale-110 my-3">
-                            <button class=" font-semibold text-sm font-roboto text-white">Đăng ký nhận ưu đãi</button>
-                        </a>
-                    </div>
+                <div
+                  class="swiper-slide slidesale flex-col relative flex container"
+                >
+                  <img src="img/baby.png" class="w-[80%]" />
+                  <div
+                    class="sale drop-shadow-lg rounded-t-3xl -mt-9 rounded-br-3xl bg-white h-auto w-[80%] sa"
+                  >
+                    <p
+                      class="text-2xl font-arima dis pt-3 font-semibold sa text-center"
+                    >
+                      Ưu đãi 50%
+                    </p>
+                    <p class="pt-2 text-center">Gói khám tổng quát</p>
+                    <p class="text-xs pt-1 text-center">
+                      Lorem ipsum dolor sit amet tarancebe
+                    </p>
+                    <p class="text-xs pt-1 text-center ">
+                      consectetur adipiscing elit turpis.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="bg-button rounded-full mt-5 mb-5 px-10 py-1 ml-2 border-2 border-orange-400"
+                    >
+                      <button
+                        class="font-semibold text-sm font-roboto  py-2 my-3 txt"
+                      >
+                        Đăng ký nhận ưu đãi
+                      </button>
+                    </a>
                   </div>
+                </div>
 
-                  <div class="swiper-slide flex-col ">
-                    <img src="img/baby.png" class="">
-                    <div class="sale absolute top-40  drop-shadow-lg rounded-lg bg-white h-auto grid place-items-center  px-5">
-                        <p class="text-2xl font-arima dis pt-3 font-semibold"> Ưu đãi 50%</p>
-                        <p class="pt-2">Gói khám tổng quát</p>
-                        <p class="text-xs pt-1">Lorem ipsum dolor sit amet tarancebe</p>
-                        <p class="text-xs pt-1">consectetur adipiscing elit turpis.</p>
+                <div
+                  class="swiper-slide slidesale flex-col relative flex container"
+                >
+                  <img src="img/baby.png" class="w-[80%]" />
+                  <div
+                    class="sale drop-shadow-lg rounded-t-3xl -mt-9 rounded-br-3xl bg-white h-auto w-[80%] sa"
+                  >
+                    <p
+                      class="text-2xl font-arima dis pt-3 font-semibold sa text-center"
+                    >
+                      Ưu đãi 50%
+                    </p>
+                    <p class="pt-2 text-center">Gói khám tổng quát</p>
+                    <p class="text-xs pt-1 text-center">
+                      Lorem ipsum dolor sit amet tarancebe
+                    </p>
+                    <p class="text-xs pt-1 text-center ">
+                      consectetur adipiscing elit turpis.
+                    </p>
 
-                        <a href="#" class="bg-button rounded-full py-1 px-3 transform transition-transform duration-300 hover:scale-110 my-3">
-                            <button class=" font-semibold text-sm font-roboto text-white">Đăng ký nhận ưu đãi</button>
-                        </a>
-                    </div>
+                    <a
+                      href="#"
+                      class=" bg-button rounded-full mt-5 mb-5 px-10 py-1 ml-2 border-2 border-orange-400"
+                    >
+                      <button
+                        class="font-semibold text-sm font-roboto py-2 my-3 txt"
+                      >
+                        Đăng ký nhận ưu đãi
+                      </button>
+                    </a>
                   </div>
+                </div>
 
-                  <div class="swiper-slide flex-col ">
-                    <img src="img/baby.png" class="">
-                    <div class="sale absolute top-40  drop-shadow-lg rounded-lg bg-white h-auto grid place-items-center px-5">
-                        <p class="text-2xl font-arima dis pt-3 font-semibold"> Ưu đãi 50%</p>
-                        <p class="pt-2">Gói khám tổng quát</p>
-                        <p class="text-xs pt-1">Lorem ipsum dolor sit amet tarancebe</p>
-                        <p class="text-xs pt-1">consectetur adipiscing elit turpis.</p>
-                        <a href="#" class="bg-button rounded-full py-1 px-3 transform transition-transform duration-300 hover:scale-110 my-3">
-                            <button class=" font-semibold text-sm font-roboto text-white">Đăng ký nhận ưu đãi</button>
-                        </a>
-                    </div>
+                <div
+                  class="swiper-slide slidesale flex-col relative flex container"
+                >
+                  <img src="img/baby.png" class="w-[80%]" />
+                  <div
+                    class="sale drop-shadow-lg rounded-t-3xl -mt-9 rounded-br-3xl bg-white h-auto w-[80%] sa"
+                  >
+                    <p
+                      class="text-2xl font-arima dis pt-3 font-semibold sa text-center"
+                    >
+                      Ưu đãi 50%
+                    </p>
+                    <p class="pt-2 text-center">Gói khám tổng quát</p>
+                    <p class="text-xs pt-1 text-center">
+                      Lorem ipsum dolor sit amet tarancebe
+                    </p>
+                    <p class="text-xs pt-1 text-center ">
+                      consectetur adipiscing elit turpis.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="bg-button rounded-full mt-5 mb-5 px-10 py-1 ml-2 border-2 border-orange-400"
+                    >
+                      <button
+                        class="font-semibold text-sm font-roboto py-2 my-3 txt"
+                      >
+                        Đăng ký nhận ưu đãi
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- Dịch vụ -->
     <section>
-      <section>
-        <div class="container mx-0 flex justify-center items-center mt-20">
-            <img src="img/doctor.png" class=" md:w-1/3  rounded shadow-lg">
-            <div>
-            <h1 class="font-semibold text-xl pl-5">Dịch vụ thai sản chọn gói</h1>
-            <p class="pl-5 mb-2">Mang thai và sinh nở là một hành trình vô cùng kỳ diệu nhưng cũng lắm mệt mỏi, áp lực,<br>thậm chí là nguy hiểm. Thấu hiểu nỗi niềm đó, dịch vụ thai sản trọn gói Phương Đông nhằm<br> mang tới trải nghiệm nhẹ nhàng, an tâm cho người mẹ trong suốt thai kỳ, ngày vượt cạn<br> đến sau sinh và sự chăm sóc toàn diện với em bé ngay từ giây phút đầu tiên chào đời.</p>
-            <ul class="list-disc-custom pl-10">
-                <li class="mb-2">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</li>
-                <li class="pl-5 mb-2">Chăm sóc mẹ và bé toàn diện trước trong và sau sinh</li>
-                <li class="mb-2">Không gian đẳng cấp với trang thiết bị y tế hiện đại</li>
-                <li class="pl-5 mb-2">Đi sinh sung sướng như đi nghỉ dưỡng</li>
-                <li class="mb-2">Con yêu chào đời với những điều kiện tốt nhất</li>
-                <li class="pl-5 mb-2">Thanh toán đồng thời bảo hiểm Y tế, bảo hiểm bảo lãnh</li>
-                <li class="">Bảng giá các gói sinh tại Bệnh viện Phương Đông</li>
-            </ul>
-            <button class="font-semibold text-l px-5 py-2 border-2 shadow-2xl rounded-full text-white mt-4 bg-button contact transition-all duration-5000 ease-in-out  ml-7">Liên hệ</button>
-            </div>
-        
+      <div class="container flex  mt-20 relative">
+        <img src="img/doctor.png" class="md:w-1/3 rounded shadow-lg" />
+        <div>
+          <h1 class="font-semibold text-xl pl-5">Dịch vụ thai sản chọn gói</h1>
+          <p class="pl-5 mb-2">
+            Mang thai và sinh nở là một hành trình vô cùng kỳ diệu nhưng cũng
+            lắm mệt mỏi, áp lực,<br />thậm chí là nguy hiểm. Thấu hiểu nỗi niềm
+            đó, dịch vụ thai sản trọn gói Phương Đông nhằm<br />
+            mang tới trải nghiệm nhẹ nhàng, an tâm cho người mẹ trong suốt thai
+            kỳ, ngày vượt cạn<br />
+            đến sau sinh và sự chăm sóc toàn diện với em bé ngay từ giây phút
+            đầu tiên chào đời.
+          </p>
+          <ul class="list-disc-custom pl-10">
+            <li class="mb-2">Đội ngũ bác sĩ sản khoa giàu kinh nghiệm</li>
+            <li class="pl-5 mb-2">
+              Chăm sóc mẹ và bé toàn diện trước trong và sau sinh
+            </li>
+            <li class="mb-2">
+              Không gian đẳng cấp với trang thiết bị y tế hiện đại
+            </li>
+            <li class="pl-5 mb-2">Đi sinh sung sướng như đi nghỉ dưỡng</li>
+            <li class="mb-2">Con yêu chào đời với những điều kiện tốt nhất</li>
+            <li class="pl-5 mb-2">
+              Thanh toán đồng thời bảo hiểm Y tế, bảo hiểm bảo lãnh
+            </li>
+            <li class="">Bảng giá các gói sinh tại Bệnh viện Phương Đông</li>
+          </ul>
+          <a
+           href="tel:+19001806" 
+          >
+            <button
+            class="font-semibold text-l px-5 py-2 border-2 shadow-2xl rounded-full text-white mt-4 bg-bt  contact transition-all duration-5000 ease-in-out ml-7"
+          >
+            Liên hệ
+          </button>
+          </a>
+          
         </div>
-        <div class="flex justify-center items-center ">
-            <img src="img/round-2.png" class=" absolute left-0 w-auto mt-10 h-1/2">
-            </div>
-        
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="img/round-2.png" class="absolute left-0 w-auto mt-10 h-1/2" />
+      </div>
     </section>
+    <!-- Bảng giá -->
+    <!-- <section>
+      <div class=" container bg-sec3 mt-20 relative">
+        <div class="flex justify-center items-center mx-0">
+          <img src="img/tem2_1.png" class="w-auto pl-20">
+          <div>
+            <p class="text-2xl font-semibold px-80">Bảng giá các dịch vụ khám và chữa bệnh:</p>
+            <p class="text-xs text-center">Ghi chú: Lorem ipsum dolor sit amet, consectetur adipiscing elit lis iaculis ac felis</p>
+          </div>
+        </div>
+        <div class="container w-3/4">
+          <div class="border-2 flex justify-between mt-10">
+            <div class="border-1 px-20 border-r-2  font-semibold pt-10">
+              STT
+            </div>
+            <div class="border-1 w-2/3 border-r-2 text-center pt-10 font-semibold">
+              TÊN DỊCH VỤ
+            </div>
+            <div class="w-2/3  py-3 text-center font-semibold">GIÁ DỊCH VỤ DÀNH CHO KHÁCH HÀNG CÓ QUỐC TỊCH
+              <div class=" flex justify-between border-t-2 mt-3">
+                <div class="border-1 border-r-2 w-1/2 py-2">VIỆT NAM</div>
+                <div class="border-1 py-2 w-1/2">NƯỚC NGOÀI</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="border">1</div>
+            <div class="border">Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng</div>
+            <div class="border">200,000/giờ</div>
+            <div class="border">400,000/giờ</div>
+
+
+          </div>
+          
+        </div>
+        
+
+      </div>
+     </section> -->
+    <section>
+      <div class="bg-sec3 relative">
+        <div class="container border-r border-l  rounded-b-xl relative bg-white ">
+          <div class=" h-[66px]  bg-sec3 "></div>
+          <div class="flex mt-10 ">
+            <div  class="ml-10 w-auto h-auto">
+              <img src="img/tem2_1.png">
+            </div>
+            <div class="">
+              <p class="text-2xl font-semibold">
+                Bảng giá các dịch vụ khám và chữa bệnh:
+              </p>
+              <p class="text-xs">
+                Ghi chú: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                lis iaculis ac felis
+              </p>
+            </div>
+          </div>
+          <div class=" mt-5 mx-0">
+            <div class="container ml-10">
+              <table
+                class="bg-white border-collapse border border-gray-200 mb-5 w-[95%]"
+              >
+                <thead class="bg-color">
+                  <tr class="text-white">
+                    <th rowspan="2" class="border border-gray-300 px-4 py-2">
+                      STT
+                    </th>
+                    <th
+                      rowspan="2"
+                      class="border border-gray-300 px-4 py-2 w-1/2"
+                    >
+                      TÊN DỊCH VỤ
+                    </th>
+                    <th colspan="2" class="h-10">
+                      GIÁ DỊCH VỤ DÀNH CHO KHÁCH HÀNG CÓ QUỐC TỊCH
+                    </th>
+                  </tr>
+                  <tr class="text-white border px-4 py-2 h-10">
+                    <th class="border w-[25%]">VIỆT NAM</th>
+                    <th class="w-[25%]">NƯỚC NGOÀI</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center">
+                  <tr class="">
+                    <td class="border border-gray-300 px-4 py-2">1</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      200,000/giờ
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      400,000/giờ
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">2</td>
+                    <td class="border border-gray-300 px-4 py-2">Cắt chỉ</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">3</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Phương tiện bảo hộ lấy máu
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">4</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Tắm bé tại nhà
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">5</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Dẫn lưu nước tiểu bàng quang
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">6</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Chăm sóc điều dưỡng tại nhà-Bệnh nhân nặng
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">7</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Chăm sóc điều dưỡng tại nhà-Bệnh nhân nặng
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      300,000/lần
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">8</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Xét nghiệm tại nhà
+                    </td>
+                    <td
+                      colspan="2"
+                      class="border border-gray-300 px-4 py-2 text-center"
+                    >
+                      Theo giá niêm yết tại BVDK Phương Đông
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">9</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      200,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      400,000/lần
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">10</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      200,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      400,000/lần
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">11</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      200,000/lần
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2">
+                      400,000/lần
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class=" bg-color w-auto h-[40px] rounded-b-lg flex justify-center items-center pt-2">
+            <div class="flex">
+              <img src="img/call.png" class="pr-2 w-[20%] h-[60%]" />
+              <a href="tel:+19001806" class="text-white text-sm"
+                >Hotline: 1900 1806</a
+              >
+            </div>
+            <div class="flex pl-40">
+              <img src="img/Group.png" class="pr-2 w-[60%] h-[60%]" />
+              <a
+                href="https://benhvienphuongdong.vn"
+                class="text-white text-sm font-normal"
+                >https://benhvienphuongdong.vn/</a
+              >
+            </div>
+          </div>
+          <!-- <div
+            class="flex justify-end absolute right-0 bottom-10 transform rotate-90"
+          >
+            <img src="img/round.png" class="w-1/2 h-1/3" />
+          </div> -->
+        </div>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
