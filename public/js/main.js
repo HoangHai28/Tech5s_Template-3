@@ -29,16 +29,24 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-  // var swiper = new Swiper(".aSwiper", {
-  //   slidesPerView: 3,
-  //   spaceBetween: 30,
-  //   navigation: {
-  //     nextEl: ".dis-next",
-  //     prevEl: ".dis-prev",
-  //     clickable: true,
-  //   },
-  // });
 });
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var fancyImages = function () {
+      if ($(".fancy").length == 0) return;
+      $(".fancy").fancybox({
+        loop: true,
+        buttons: ["zoom", "share", "slideShow", "fullScreen", "thumbs", "close"],
+        thumbs: {
+          loop: true,
+          autoStart: false,
+          axis: "x",
+        },
+      });
+    };
+    
+  })
 
 // var demo = function () {
 //   var Menubuton = document.querySelector(".show_Menu");
@@ -62,7 +70,7 @@ var GUI = {
   slideBanner: () => {
     if (document.querySelector(".aSwiper")) {
       var swiper = new Swiper(".aSwiper", {
-        slidesPerView: 3.2,
+        slidesPerView: 3.5,
         spaceBetween: 0,
         
         navigation: {
@@ -83,4 +91,28 @@ var GUI = {
 
 document.addEventListener("DOMContentLoaded", () => {
   GUI.init();
+});
+
+var Product = {
+  slideMachine: () => {
+    if(document.querySelector(".machineSwiper")) {
+    var swiper = new Swiper(".machineSwiper", {
+      slidesPerView: 6,
+      spaceBetween: 20,
+      navigation: {
+            nextEl: ".swiper-button-next2",
+            prevEl: ".swiper-button-prev2",
+            clickable: true,
+      },
+    });
+    }
+  },
+
+  init: () => {
+    Product.slideMachine();
+  },
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  Product.init();
 });

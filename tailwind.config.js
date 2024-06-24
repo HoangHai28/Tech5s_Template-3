@@ -5,9 +5,8 @@ module.exports = {
     extend: {
        fontFamily:{
         'roboto': ['Roboto','sans-serif'],
-          'arima': ['Arima', 'sans-serif'],
-       }
-
+        'arima': ['Arima', 'sans-serif'],
+       },
     },
   },
   plugins: [],
