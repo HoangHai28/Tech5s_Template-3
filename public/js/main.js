@@ -72,7 +72,22 @@ var GUI = {
       var swiper = new Swiper(".aSwiper", {
         slidesPerView: 3.5,
         spaceBetween: 0,
-        
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 0
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 3.5,
+            spaceBetween: 30
+          }
+        },
         navigation: {
           nextEl: ".dis-next",
           prevEl: ".dis-prev",
@@ -99,6 +114,23 @@ var Product = {
     var swiper = new Swiper(".machineSwiper", {
       slidesPerView: 6,
       spaceBetween: 20,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1.7,
+          spaceBetween: 10
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 6,
+        spaceBetween: 20,
+        }
+      },
       navigation: {
             nextEl: ".swiper-button-next2",
             prevEl: ".swiper-button-prev2",

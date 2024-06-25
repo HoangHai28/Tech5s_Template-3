@@ -39,7 +39,7 @@
   height: 100%;
 }
 .slidesale {
-  width: 100%;
+  width: auto;
   
 
 }
@@ -107,17 +107,14 @@
   }
   .dis{
     background: linear-gradient(90deg, #26BA5F 0%, #08B2FB 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
   }
   
   .sa:hover button{
     color: white;
   }
-  .sa:hover h3{
-    color: white;
-  }
-  .sa:hover {
+  .sa:hover p{
     color: white;
   }
   .list-disc-custom li::before {
