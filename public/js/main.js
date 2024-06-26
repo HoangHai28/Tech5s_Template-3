@@ -70,23 +70,26 @@ var GUI = {
   slideBanner: () => {
     if (document.querySelector(".aSwiper")) {
       var swiper = new Swiper(".aSwiper", {
-        slidesPerView: 3.5,
-        spaceBetween: 0,
         breakpoints: {
           320: {
             slidesPerView: 1,
-            spaceBetween: 0
+            spaceBetween: 10
           },
           // when window width is >= 480px
           480: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 0
           },
           // when window width is >= 640px
           640: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          1024: {
             slidesPerView: 3.5,
-            spaceBetween: 30
-          }
+            spaceBetween: 20
+          },
+          
         },
         navigation: {
           nextEl: ".dis-next",
@@ -123,7 +126,7 @@ var Product = {
         // when window width is >= 480px
         480: {
           slidesPerView: 3,
-          spaceBetween: 0
+          spaceBetween: 10
         },
         // when window width is >= 640px
         640: {
@@ -160,3 +163,5 @@ function show_hide() {
      click.style.display ="none";  
   }   
 }  
+
+
