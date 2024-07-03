@@ -87,7 +87,7 @@ var GUI = {
           },
           1024: {
             slidesPerView: 3.5,
-            spaceBetween: 20
+            spaceBetween: 30
           },
           
         },
@@ -163,7 +163,6 @@ function show_hide() {
      click.style.display ="none";  
   }   
 }  
-
 
 
 

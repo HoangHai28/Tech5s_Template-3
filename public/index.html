@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <link href="style.css" rel="stylesheet" />
+    <link href="jquery.fancybox.min.css" rel="stylesheet"/>
     <link href="main.css" rel="stylesheet" />
     <script src="./js/main.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -21,7 +24,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Arima&display=swap"
     />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
 
   <body class="overflow-x-hidden max-w-full">
@@ -34,46 +37,39 @@
         <div class="flex justify-center items-center dropdown">
           <ul id="list-items" class=" lg:flex hidden font-medium  ">
             <li
-              class="lg:mx-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[13px]"
             >
-              <a href="#">Ưu đãi</a>
+              <a href="#"  class="lg:mx-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[13px]">Ưu đãi</a>
             </li>
             <li
-              class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]"
             >
-              <a href="#">Dịch vụ</a>
+              <a href="#"  class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]">Dịch vụ</a>
             </li>
             <li
-              class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]"
             >
-              <a href="#">Giới thiệu</a>
+              <a href="#" class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]">Giới thiệu</a>
             </li>
             <li
-              class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]"
             >
-              <a href="#">Đội ngũ bác sĩ</a>
+              <a href="#" class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]">Đội ngũ bác sĩ</a>
             </li>
             <li
-              class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]"
             >
-              <a href="#">Bảng giá</a>
+              <a href="#" class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]">Bảng giá</a>
             </li>
             <li
-              class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]"
             >
-              <a href="#">Thư viện</a>
+              <a href="#" class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]">Thư viện</a>
             </li>
             <li
-              class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-200 xl:text-lg lg:text-[14px]"
             >
-              <a href="#">Liên hệ</a>
+              <a href="#" class="xl:mr-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]">Liên hệ</a>
             </li>
           </ul>
         </div>
         <div class="md:flex hidden">
           <a href="tel:+19001806" class="">
             <div
-              class="flex bg-bt transform transition-transform duration-300 hover:scale-110 rounded-3xl drop-shadow-lg shadow-black py-2 lg:py-0"
+              class="flex bg-bt transform transition-transform duration-300 btn  rounded-3xl drop-shadow-lg shadow-black py-2 lg:py-0"
             >
               <div
                 class="h-auto lg:w-auto w-[22%] flex justify-center items-center lg:pr-2 lg:pl-4 px-1"
@@ -174,7 +170,7 @@
           </div>
         </div>
         <div class="relative lg:w-[60%] xl:mt-0 lg:mt-10">
-          <div class="lg:w-[calc(100%+25rem)] xl:w-[calc(100%+16rem)] md:px-0 px-10">
+          <div class="lg:w-[calc(100%+25rem)] xl:w-[calc(100%+5rem)] 2xl:w-[calc(100%+16rem)] md:px-0 px-10">
             <div class="swiper s-sale aSwiper flex">
               <div class="swiper-wrapper pb-10 lg:mx-0">
                 <div class="swiper-slide slidesale flex-col flex ">
@@ -199,7 +195,7 @@
 
                     <a
                       href="#"
-                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white w-[80%] block text-center mx-auto"
+                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white hover:border-0 w-[80%] block text-center mx-auto"
                     >
                       <button
                         class="font-medium text-sm font-roboto txt w-auto"
@@ -386,7 +382,7 @@
           </ul>
           <a href="tel:+19001806">
             <button
-              class="font-medium text-xl px-10 py-2 border-2 shadow-2xl rounded-full text-white mt-4 bg-bt contact transition delay-90 duration-300 ease-in-out ml-7"
+              class="font-medium text-xl px-10 py-2 border-2 shadow-2xl rounded-full text-white mt-4 bg-bt btn transition delay-90 duration-300 ease-in-out ml-7"
             >
               Liên hệ
             </button>
@@ -581,7 +577,7 @@
           >
             <div class="flex pl-2 lg:pl-0 lg:pr-0 pr-2">
               <img src="img/call.png" class="lg:pr-2 lg:w-[20%] w-[15%] h-[60%] lg:ml-0" />
-              <a href="tel:+19001806" class="text-white lg:text-sm text-[10px] font-roboto pl-2 lg:pt-0 pt-1"
+              <a href="tel:+19001806" class="text-white lg:text-sm text-[10px] font-roboto pt-1"
                 >Hotline: 1900 1806</a
               >
             </div>
@@ -589,7 +585,7 @@
               <img src="img/Group.png" class="pr-1 lg:w-[60%] w-[30%] h-[60%]" />
               <a
                 href="https://benhvienphuongdong.vn"
-                class="text-white lg:text-sm text-[10px] font-normal font-roboto lg:pt-0 pt-1"
+                class="text-white lg:text-sm text-[10px] font-normal font-roboto pt-1"
                 >https://benhvienphuongdong.vn/</a
               >
             </div>
@@ -603,14 +599,17 @@
     </section> 
     <!--Mom & Baby -->
       <section class=" ">
-      <div class="xl:block lg:flex justify-center items-center xl:mt-0 md:mt-0 mt-10 lg:mt-40">
-        <div class="md:mt-20 flex absolute">
-          <img src="img/mom.png" class="w-full h-auto hidden xl:block" />
+      <div class="xl:block lg:flex justify-center items-center xl:mt-0 md:mt-0 mt-10  relative">
+        <div class="md:mt-20 flex xl:absolute xl:-top-20 2xl:-top-40 ">
+          <div class="h-auto hidden xl:block xl:w-[100%]">
+             <img src="img/mom.png" class="" />
+          </div>
+         
           <div class="container mx-3">
             <div
-              class="xl:relative right-20 top-40 shadow-2xl box bg-white rounded-t-[20px] rounded-br-[20px] "
+              class="xl:relative right-20 top-10 shadow-2xl box bg-white rounded-t-[20px] rounded-br-[20px] "
             >
-              <div class="xl:pl-10 md:px-10 xl:pr-[95px] py-10 text-center xl:text-left">
+              <div class="xl:pl-10 md:px-10 xl:pr-0 py-10 text-center xl:text-left 2xl:pb-20">
                 <p class="font-medium lg:text-xl xl:text-4xl text-lg font-roboto">
                   Bệnh viên Phương Đông tiên phong<br />
                   trong dịch vụ thai sản trọn gói
@@ -625,7 +624,7 @@
                 </p>
                 <a href="#">
                   <button
-                    class="font-medium text-l px-5 py-3 shadow-2xl rounded-full text-white mt-4 bg-bt transform transition-transform duration-300 hover:scale-110 font-roboto"
+                    class="font-medium text-l px-5 py-3 shadow-2xl rounded-full text-white mt-4 2xl:mt-10 bg-bt transform transition-transform duration-300 hover:scale-110 font-roboto btn"
                   >
                     Đăng kí tư vấn
                   </button>
@@ -636,16 +635,16 @@
         </div>
       </div>
 
-      <div class="xl:flex justify-center items-center ml-80 hidden">
-        <img src="img/round-2.png" class="w-[30%] mt-80 h-[30%]" />
+      <div class="xl:flex justify-center items-center mt-40 hidden xl:w-[90%] 2xl:w-[90%] ">
+        <img src="img/round-2.png" class="" />
       </div>
       <!-- <div class="flex justify-center items-center absolute   ">
           <img src="img/round-2.png" class=" w-auto h-64 ">
       </div> -->
     </section>
     <!-- Thiết bị -->
-    <section>
-      <div class="xl:mt-0 mt-[400px] sm:mt-[430px] lg:mt-60 ">
+    <section class=" ">
+      <div class="xl:mt-0 mt-10 ">
         <div class="container lg:flex justify-between md:pl-3 xl:px-0 px-3 ">
           <p class="font-medium xl:text-4xl text-xl font-roboto">
             Hình ảnh về cơ sở vật chất, trang thiết bị
@@ -700,9 +699,9 @@
       </div>
     </section> 
     <!--Đội ngũ bác sĩ -->
-    <section>
-      <div class="relative mx-auto xl:-mt-80 mt-10 lg:mt-20">
-        <div class="container">
+    <section class="relative z-10">
+      <div class=" xl:-mt-40 2xl:-mt-80 mt-10 lg:mt-20">
+        <div class="container mx-auto">
           <div class="lg:flex justify-between md:pl-3 lg:pl-0">
             <div>
               <p class="font-medium xl:text-4xl text-xl font-roboto xl:px-0 px-3">
@@ -710,9 +709,9 @@
               </p>
             </div>
             <a href="#">
-              <div class="flex bg-bt lg:px-2 py-2 rounded-full md:w-[18%] lg:w-auto w-[40%] mx-2 lg:mt-0 mt-2 md:pl-0 pl-2">
-                <img src="img/user.png" class="lg:pl-0 pl-2" />
-                <button class="text-white font-roboto lg:pl-0 md:pl-2 pl-2">Tìm bác sĩ</button>
+              <div class="flex bg-bt lg:px-2 py-2 rounded-full md:w-[18%] lg:w-auto w-[40%] mx-2 lg:mt-0 mt-2 md:pl-0 pl-2 btn">
+                <img src="img/user.png" class="lg:pl-0 pl-1" />
+                <button class="text-white font-roboto lg:pl-0 md:pl-2 pl-2 py-1 ">Tìm bác sĩ</button>
               </div>
             </a>
           </div>
@@ -805,7 +804,7 @@
                   BS: NGUYỄN HUY BẠO
                 </p>
                 <p class="opacity-50 text-sm mb-2 font-roboto">
-                  PGS.TS. Bác sĩ Ung bướu - Phó giám đốc<br />
+                  PGS.TS. Bác sĩ Ung bướu - Giám đốc<br />
                   Bệnh viện Đa khoa Phương Đông
                 </p>
                 <p class="md:text-xl text-lg font-roboto">
@@ -971,7 +970,7 @@
                   DS: NGUYỄN THỊ KIM YẾN
                 </p>
                 <p class="opacity-50 text-sm mb-2 font-roboto">
-                  PGS.TS. Bác sĩ Ung bướu - Phó giám đốc<br />
+                  PGS.TS. Bác sĩ Ung bướu - Giám đốc<br />
                   Bệnh viện Đa khoa Phương Đông
                 </p>
                 <p class="md:text-xl text-lg font-roboto">
@@ -1212,16 +1211,19 @@
             </div>
           </div>
         </div>
-        <!-- <div class="absolute right-0">
-              <img src="img/round-r.png" class="w-64 min-h-full" >
-      </div> -->
+        
       </div>
     </section>
     <!-- Nội dung -->
     <section class="relative">
+      <div class="absolute right-0 -top-60 lg:block hidden">
+        <img src="img/round-r.png" class="w-64 min-h-full" >
+      </div>
       <div class="xl:flex flex-wrap container mt-20 sm:px-3 lg:px-0">
         <div class="container xl:w-[50%] flex-col mx-auto">
-          <img src="img/baby-2.png" class="w-[100%] xl:px-0 px-3" />
+          <div class="w-[100%] xl:px-0 px-3">
+            <img src="img/baby-2.png" class="w-[100%]" />
+          </div>
           <div class="mt-10 xl:block hidden">
             <p class="font-medium xl:text-4xl text-xl font-roboto">
               Dấu hiệu nhận biết chuyển dạ và sinh non:
@@ -1313,7 +1315,10 @@
               posuere a cursus netus
             </p>
           </div>
-          <img src="img/baby-1.png" class="w-[100%] xl:mt-[147px] xl:block hidden" />
+          <div class="w-[100%] xl:mt-[64px] 2xl:mt-[145px]  xl:block hidden">
+            <img src="img/baby-1.png" class="w-[100%]"/>
+          </div>
+          
         </div>
         <!-- <img src="img/round-3.png" class=" w-auto h-1/3"> -->
       </div>
@@ -1323,12 +1328,12 @@
       />
     </section>
     <!-- Giải pháp -->
-    <section>
+    <section class="relative">
       <div class="flex justify-center items-center mt-10">
         <img src="img/bg-color-green.png" />
       </div>
       <div class="container">
-        <div class="relative xl:flex md:-mt-[700px] xl:-mt-[530px] -mt-[380px] xl:px-0 px-2">
+        <div class="absolute xl:top-[150px] 2xl:top-40 top-0 xl:flex   xl:px-0 px-2">
           <!-- mobile1 -->
           <p class=" text-xl font-medium font-roboto xl:hidden mb-2 mt-10 md:pl-3">
             Giải pháp an toàn hãy lựa chọn dịch vụ thai
@@ -1346,9 +1351,9 @@
               </a>
             </div>
           </div>
-          <div class="xl:my-auto">
+          <div class="xl:my-auto xl:pl-10 xl:w-[60%] 2xl:w-[55%]">
             <p class="xl:text-4xl text-xl font-medium font-roboto xl:block hidden">
-              Giải pháp an toàn hãy lựa chọn dịch vụ thai<br />
+              Giải pháp an toàn hãy lựa chọn dịch vụ thai<br>
               sản trọn gói tại bệnh viện Phương Đông
             </p>
             <p class="pt-3 xl:text-[18px] font-roboto text-center xl:text-left">
@@ -1359,15 +1364,15 @@
               aenean fusce<br class=" sm:block lg:hidden hidden"> pulvinar elementum odio dolor lorem aenean quis.
               Ridiculus mattis.
             </p>
-            <div class="lg:mt-8 mt-4 xl:ml-0 ml-2 xl:block  flex justify-center items-center">
+            <div class="lg:mt-8 mt-4 xl:ml-0 ml-2 xl:block  flex justify-center items-center ">
               <a href="tel:+19001806" class="">
                 <div
-                  class="flex bg-bt transform transition-transform duration-300 hover:scale-110 rounded-3xl drop-shadow-lg shadow-black  xl:w-1/4 w-[100%] md:px-1 py-2"
+                  class="flex bg-bt transform transition-transform duration-300 rounded-3xl drop-shadow-lg shadow-black  xl:w-1/4 w-[100%] md:px-1 py-2 btn"
                 >
                   <div class="flex justify-center items-center px-2">
                     <img src="img/phone.png" />
                   </div>
-                  <button class="font-medium text-white lg:text-xl font-roboto xl:pr-0 pr-2">
+                  <button class="font-medium text-white lg:text-xl font-roboto xl:pr-0 pr-2 ">
                     Liên hệ ngay
                   </button>
                 </div>
@@ -1379,10 +1384,10 @@
     </section>
     <!-- Lý do -->
     <section>
-      <div class="container xl:flex lg:mt-40 mt-10 px-2 xl:px-0 md:text-center xl:text-left">
-        <div class="my-auto xl:w-[50%]">
+      <div class="container xl:flex lg:mt-20 mt-[200px] sm:mt-0  px-2 xl:px-0 md:text-center xl:text-left">
+        <div class="my-auto xl:w-[70%]">
           <h1 class="xl:text-4xl text-xl font-medium font-roboto">
-            Tại sao bạn nên chọn gói dịch vụ thai sản<br />
+            Tại sao bạn nên chọn gói dịch vụ thai sản<br/>
             tại bệnh viện Phương Đông
           </h1>
           <h2 class="text-lg font-medium pb-1 font-roboto">
@@ -1416,12 +1421,12 @@
           <div class="mt-8 xl:block hidden">
             <a href="tel:+19001806" class="">
               <div
-                class="flex bg-bt transform transition-transform duration-300 hover:scale-110 rounded-3xl drop-shadow-lg shadow-black w-[23%] py-2"
+                class="flex bg-bt transform transition-transform duration-300 rounded-3xl drop-shadow-lg shadow-black 2xl:w-[20%] xl:w-[25%] py-2 btn"
               >
-                <div class="flex justify-center items-center px-3">
+                <div class="flex justify-center items-center 2xl:px-3 xl:px-2">
                   <img src="img/phone.png" />
                 </div>
-                <button class="font-medium text-white text-xl font-roboto pr-0">
+                <button class="font-medium text-white text-xl font-roboto ">
                   Liên hệ ngay
                 </button>
               </div>
@@ -1435,9 +1440,9 @@
         <div class="mt-8 xl:hidden flex justify-center items-center">
           <a href="tel:+19001806" class="">
             <div
-              class="flex bg-bt transform transition-transform duration-300 hover:scale-110 rounded-3xl drop-shadow-lg shadow-black xl:w-1/4 w-[100%] py-3"
+              class="flex bg-bt transform transition-transform duration-300 hover:scale-110 rounded-3xl drop-shadow-lg shadow-black xl:w-1/3  py-3"
             >
-              <div class="flex justify-center items-center px-2">
+              <div class="flex justify-center items-center px-2 ">
                 <img src="img/phone.png" />
               </div>
               <button class="font-medium text-white lg:text-xl text-lg font-roboto pr-3">
@@ -1559,19 +1564,19 @@
                   >Số 9, Phố Viên, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</span
                 >
               </li>
-              <li class="pb-3 font-roboto md:text-base text-xs">
+              <li class="pb-3 font-roboto md:text-base text-xs hover:font-bold">
                 <a href="https://mail.google.com/">
-                   Email:<span class="font-medium"
+                   Email:<span class=""
                   >bvphuongdong@phuongdonghospital.vn</span
                 >
                 </a>
                
               </li>
-              <li class="font-medium pb-3 font-roboto md:text-base text-xs">
+              <li class=" pb-3 font-roboto md:text-base text-xs hover:font-bold">
                 <a href="https://mail.google.com/">info.benhvienphuongdong@gmail.com</a>
                 
               </li>
-              <li class="md:text-base text-xs font-roboto">
+              <li class="md:text-base text-xs font-roboto hover:font-bold">
                 <a href="tel:+19001806"
                   >Tổng đài tư vấn:
                   <span class="font-medium font-roboto">19001806</span></a
@@ -1583,15 +1588,15 @@
             <h1 class="md:text-2xl font-medium font-roboto text-lg">Giờ làm việc</h1>
             <ul>
               <li class="pb-3 font-roboto md:text-base text-xs">Từ 7:00 - 19:00 từ Thứ 2 đến CN</li>
-              <li class="pb-3 font-roboto md:text-base text-xs">
+              <li class="pb-3 font-roboto md:text-base text-xs hover:font-bold">
                 <a href="tel:+0833015115">
                   Cấp cứu 24/7: 0833 015 115
                 </a></li>
-              <li class="pb-3 font-roboto md:text-base text-xs">
+              <li class="pb-3 font-roboto md:text-base text-xs hover:font-bold">
                 <a href="tel:+0911615115">
                   Hotline Tiêm chủng: 0911 615 115
                 </a></li>
-              <li class="pb-3 font-roboto md:text-base text-xs">
+              <li class="pb-3 font-roboto md:text-base text-xs hover:font-bold">
                 <a href="tel:+19001806">Hotline Hỗ trợ khách hàng: 1900 1806</a>
               </li>
             </ul>
@@ -1600,9 +1605,15 @@
             <h1 class="md:text-2xl font-medium font-roboto text-lg">Theo dõi chúng tôi</h1>
             <div>
               <div class="flex lg:justify-between justify-center items-center space-x-2">
-                <a href="https://www.facebook.com/"><img src="img/fb.png" /></a>
-                <a href="https://www.youtube.com/"><img src="img/youtube.png" /></a>
-                <a href="https://www.tiktok.com/"><img src="img/tiktok.png" /></a>
+                <a href="https://www.facebook.com/" class="border rounded-full w-[50px] h-[50px] flex justify-center items-center fb">
+                  <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="border rounded-full w-[50px] h-[50px] flex justify-center items-center fb">
+                  <i class="fa-brands fa-youtube fa-2x " style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.tiktok.com/" class="border rounded-full w-[50px] h-[50px] flex justify-center items-center fb">
+                  <i class="fa-brands fa-tiktok fa-2x " style="color: #ffffff;"></i>
+                </a>
                 
               </div>
               <div class="lg:block flex justify-center items-center">

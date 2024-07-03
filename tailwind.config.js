@@ -7,6 +7,9 @@ module.exports = {
         'roboto': ['Roboto','sans-serif'],
         'arima': ['Arima', 'sans-serif'],
        },
+       screens: {
+        'custom': '83.5rem',
+      },
     },
   },
   plugins: [],
