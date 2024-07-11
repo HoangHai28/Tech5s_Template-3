@@ -8,7 +8,7 @@ module.exports = {
         'arima': ['Arima', 'sans-serif'],
        },
        screens: {
-        'custom': '83.5rem',
+        '1366': '1366px',
       },
     },
   },

@@ -558,12 +558,6 @@ video {
   width: 100%;
 }
 
-@media (min-width: 83.5rem) {
-  .container {
-    max-width: 83.5rem;
-  }
-}
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -585,6 +579,12 @@ video {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1366px;
   }
 }
 
@@ -761,10 +761,6 @@ video {
 
 .mt-\[200px\] {
   margin-top: 200px;
-}
-
-.ml-20 {
-  margin-left: 5rem;
 }
 
 .block {
@@ -1742,8 +1738,8 @@ video {
     margin-top: -20px;
   }
 
-  .xl\:-mt-\[60px\] {
-    margin-top: -60px;
+  .xl\:-mt-\[75px\] {
+    margin-top: -75px;
   }
 
   .xl\:ml-0 {
@@ -1772,6 +1768,54 @@ video {
 
   .xl\:mt-\[64px\] {
     margin-top: 64px;
+  }
+
+  .xl\:-mt-\[95px\] {
+    margin-top: -95px;
+  }
+
+  .xl\:mt-\[px\] {
+    margin-top: px;
+  }
+
+  .xl\:mt-\[50px\] {
+    margin-top: 50px;
+  }
+
+  .xl\:mt-\[20px\] {
+    margin-top: 20px;
+  }
+
+  .xl\:-mt-\[70px\] {
+    margin-top: -70px;
+  }
+
+  .xl\:-mt-\[50px\] {
+    margin-top: -50px;
+  }
+
+  .xl\:-mt-\[40px\] {
+    margin-top: -40px;
+  }
+
+  .xl\:-mt-\[10px\] {
+    margin-top: -10px;
+  }
+
+  .xl\:-mt-\[15px\] {
+    margin-top: -15px;
+  }
+
+  .xl\:-mt-\[25px\] {
+    margin-top: -25px;
+  }
+
+  .xl\:-mt-\[30px\] {
+    margin-top: -30px;
+  }
+
+  .xl\:-mt-\[1px\] {
+    margin-top: -1px;
   }
 
   .xl\:block {
@@ -1909,6 +1953,12 @@ video {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .\31 366\:-mt-\[75px\] {
+    margin-top: -75px;
   }
 }
 
