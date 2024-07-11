@@ -29,16 +29,16 @@
 
   <body class="overflow-x-hidden max-w-full">
     <!-- header 1-->
-    <section>
+    <section class="px-4 2xl:px-0 ">
       <div class="container flex justify-between mt-5 mx-auto">
-        <div class="w-[40%] lg:w-auto mx-auto lg:mx-0 ">
+        <div class="w-[40%] lg:w-auto lg:mx-0 ">
           <img src="img/tem2_1.png" class="lg:w-auto" />
         </div>
-        <div class="flex justify-center items-center dropdown">
-          <ul id="list-items" class=" lg:flex hidden font-medium  ">
+        <div class="flex justify-center items-center">
+          <ul class=" lg:flex hidden font-medium  ">
             <li
             >
-              <a href="#"  class="lg:mx-10 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[13px]">Ưu đãi</a>
+              <a href="#"  class="xl::mx-10 lg:mr-8 hover:underline hover:text-blue-500 transition-colors duration-200 delay-100 xl:text-lg lg:text-[14px]">Ưu đãi</a>
             </li>
             <li
             >
@@ -66,7 +66,56 @@
             </li>
           </ul>
         </div>
-        <div class="md:flex hidden">
+
+        <!-- header mobile -->
+        <label  for="mobile-input" class="lg:hidden pr-10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+            <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>
+        </label>
+        <input type="checkbox" class="nav-input hidden" id="mobile-input">
+
+
+        <label  for="mobile-input" class="over-lay"></label>
+        <div class="nav-mobile">
+          <label  for="mobile-input" class="mobile-close">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>            
+          </label>
+          <div class="flex justify-center items-center mt-5">
+            <img src="./img/logo1.png" alt="">
+          </div>
+           <ul
+          class=" mobile-list text-center"
+        >
+          <li class="">
+            <a href="#" class="mobile-link hover:underline">Ưu đãi</a>
+          </li>
+          <li class="">
+            <a href="#" class="mobile-link hover:underline">Dịch vụ</a>
+          </li>
+          <li class="">
+            <a href="#" class="mobile-link hover:underline">Giới thiệu</a>
+          </li>
+          <li class="">
+            <a href="#" class="mobile-link hover:underline">Đội ngũ bác sĩ</a>
+          </li>
+          <li class="">
+            <a href="#" class="mobile-link hover:underline">Bảng giá</a>
+          </li>
+          <li class="">
+            <a href="#" class="mobile-link hover:underline">Thư viện</a>
+          </li>
+          <li class="">
+            <a href="#" class="mobile-link hover:underline">Liên hệ</a>
+          </li>
+        </ul>
+        </div>
+
+        <!-- header mobile2 -->
+
+        <div class="lg:flex hidden">
           <a href="tel:+19001806" class="">
             <div
               class="flex bg-bt transform transition-transform duration-300 btn  rounded-3xl drop-shadow-lg shadow-black py-2 lg:py-0"
@@ -85,23 +134,6 @@
           </a>
           
         </div>
-        <div id="nut" class="lg:hidden cursor-pointer mx-auto btn">
-            <svg
-              onclick="show_hide()"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="{1.5}"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </div>
       </div>
     </section>
     <!-- banner -->
@@ -137,12 +169,12 @@
     <!-- Ưu đãi -->
     <section class="container lg:mt-20 mt-5">
       <div class="xl:flex flex-wrap  ">
-        <div class="xl:w-[35%] relative">
+        <div class="xl:w-[35%] relative xl:px-4 2xl:px-0">
           <div class="md:ml-0 ml-5">
             <p class="font-medium lg:text-4xl text-xl font-roboto xl:text-left text-center ">Chương trình ưu đãi:</p>
             <p class="lg:text-lg text-sm pt-2 font-roboto md:block hidden xl:text-left text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit lis<br />
-              iaculis ac felis porta. Vulputate tellus sapien pat sit ipsum<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit lis<br class="xl:hidden 2xl:block" />
+              iaculis ac felis porta. Vulputate tellus sapien pat sit ipsum<br class="xl:hidden 2xl:block" />
               molestie pharetran da volutpat semper.
             </p>
             <!-- mobile -->
@@ -170,7 +202,7 @@
           </div>
         </div>
         <div class="relative lg:w-[60%] xl:mt-0 lg:mt-10">
-          <div class="lg:w-[calc(100%+25rem)] xl:w-[calc(100%+5rem)] 2xl:w-[calc(100%+16rem)] md:px-0 px-10">
+          <div class="lg:w-[calc(100%+25rem)] xl:w-[calc(100%+6rem)] 2xl:w-[calc(100%+16rem)] md:px-0 px-10">
             <div class="swiper s-sale aSwiper flex">
               <div class="swiper-wrapper pb-10 lg:mx-0">
                 <div class="swiper-slide slidesale flex-col flex ">
@@ -195,7 +227,7 @@
 
                     <a
                       href="#"
-                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white hover:border-0 w-[80%] block text-center mx-auto"
+                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white hover:border-white w-[80%] block text-center mx-auto"
                     >
                       <button
                         class="font-medium text-sm font-roboto txt w-auto"
@@ -228,7 +260,7 @@
 
                     <a
                       href="#"
-                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white w-[80%] block text-center mx-auto"
+                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white hover:border-white w-[80%] block text-center mx-auto"
                     >
                       <button
                         class="font-medium text-sm font-roboto txt w-auto"
@@ -261,7 +293,7 @@
 
                     <a
                       href="#"
-                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white w-[80%] block text-center mx-auto"
+                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white hover:border-white w-[80%] block text-center mx-auto"
                     >
                       <button
                         class="font-medium text-sm font-roboto txt w-auto"
@@ -294,7 +326,7 @@
 
                     <a
                       href="#"
-                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white w-[80%] block text-center mx-auto"
+                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white hover:border-white w-[80%] block text-center mx-auto"
                     >
                       <button
                         class="font-medium text-sm font-roboto txt w-auto"
@@ -327,7 +359,7 @@
 
                     <a
                       href="#"
-                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white w-[80%] block text-center mx-auto"
+                      class="bg-button rounded-full mt-5 mb-5 py-2 border-2 border-orange-400 hover:text-white hover:border-white w-[80%] block text-center mx-auto"
                     >
                       <button
                         class="font-medium text-sm font-roboto txt w-auto"
@@ -345,9 +377,9 @@
     </section>
     <!-- Dịch vụ -->
     <section>
-      <div class="container lg:flex md:mt-20 mt-5 md:relative mx-auto flex-wrap xl:flex-nowrap">
+      <div class="container lg:flex md:mt-20 mt-5 md:relative mx-auto flex-wrap xl:flex-nowrap xl:px-4 2xl:px-0">
         <img src="img/doctor.png" class=" xl:w-auto w-[100%] xl:px-0 px-3" />
-        <div class="sm:pl-5 lg:pl-10 ">
+        <div class="sm:pl-5 lg:pl-10 px-4 ">
           <h1 class="font-medium lg:text-4xl text-xl lg:pl-5 pl-2  font-roboto">
             Dịch vụ thai sản chọn gói
           </h1>
@@ -395,7 +427,7 @@
     </section>
     <!-- Bảng giá -->
     <section>
-      <div class="bg-sec3 w-full h-full relative lg:mt-20 mt-10 ">
+      <div class="bg-sec3 w-full h-full md:pb-16 md:pt-10 xl:pt-0 pb-5 relative lg:mt-20 mt-10 xl:px-4 2xl:px-0">
         <div class="container border-r border-l rounded-b-xl bg-white lg:relative lg:z-50 lg:mt-0">
           <div class="lg:h-[70px] lg:w-[100%] bg-sec3 h-[30px]"></div>
           <div class="sm:pl-3 lg:pl-0 lg:flex mt-10">
@@ -573,19 +605,19 @@
             </div>
           </div>
           <div
-            class="bg-color w-auto h-[40px] rounded-b-lg flex sm:justify-center sm:items-center pt-2"
+            class="bg-color w-auto h-[40px] rounded-b-lg flex justify-center items-center space-x-5 pt-2"
           >
-            <div class="flex pl-2 lg:pl-0 lg:pr-0 pr-2">
-              <img src="img/call.png" class="lg:pr-2 lg:w-[20%] w-[15%] h-[60%] lg:ml-0" />
-              <a href="tel:+19001806" class="text-white lg:text-sm text-[10px] font-roboto pt-1"
+            <div class="flex pl-2 lg:pl-0 justify-center items-center ">
+              <img src="img/call.png" class="lg:pr-2 lg:w-[20%] w-[20%] h-[60%]" />
+              <a href="tel:+19001806" class="text-white lg:text-sm text-[10px] font-roboto "
                 >Hotline: 1900 1806</a
               >
             </div>
-            <div class="flex lg:pl-40 pl-0 ">
+            <div class="flex lg:pl-40 pl-1 justify-center items-center ">
               <img src="img/Group.png" class="pr-1 lg:w-[60%] w-[30%] h-[60%]" />
               <a
                 href="https://benhvienphuongdong.vn"
-                class="text-white lg:text-sm text-[10px] font-normal font-roboto pt-1"
+                class="text-white lg:text-sm text-[10px] font-normal font-roboto"
                 >https://benhvienphuongdong.vn/</a
               >
             </div>
@@ -645,7 +677,7 @@
     <!-- Thiết bị -->
     <section class=" ">
       <div class="xl:mt-0 mt-10 ">
-        <div class="container lg:flex justify-between md:pl-3 xl:px-0 px-3 ">
+        <div class="container lg:flex justify-between md:pl-3 2xl:px-0 px-4 ">
           <p class="font-medium xl:text-4xl text-xl font-roboto">
             Hình ảnh về cơ sở vật chất, trang thiết bị
           </p>
@@ -700,22 +732,22 @@
     </section> 
     <!--Đội ngũ bác sĩ -->
     <section class="relative z-10">
-      <div class=" xl:-mt-40 2xl:-mt-80 mt-10 lg:mt-20">
+      <div class=" xl:-mt-40 2xl:-mt-60 mt-10 lg:mt-20">
         <div class="container mx-auto">
-          <div class="lg:flex justify-between md:pl-3 lg:pl-0">
+          <div class="lg:flex justify-between md:pl-3 lg:pl-0 ">
             <div>
-              <p class="font-medium xl:text-4xl text-xl font-roboto xl:px-0 px-3">
+              <p class="font-medium xl:text-4xl text-xl font-roboto px-4 2xl:px-0">
                 Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
               </p>
             </div>
             <a href="#">
               <div class="flex bg-bt lg:px-2 py-2 rounded-full md:w-[18%] lg:w-auto w-[40%] mx-2 lg:mt-0 mt-2 md:pl-0 pl-2 btn">
                 <img src="img/user.png" class="lg:pl-0 pl-1" />
-                <button class="text-white font-roboto lg:pl-0 md:pl-2 pl-2 py-1 ">Tìm bác sĩ</button>
+                <button class="text-white font-roboto lg:pl-0 pl-2 py-1 ">Tìm bác sĩ</button>
               </div>
             </a>
           </div>
-          <div class="xl:flex justify-between  flex-wrap">
+          <div class="xl:flex justify-between xl:px-3 2xl:px-0">
             <div class="flex flex-wrap justify-center items-center xl:mt-5 mt-10 xl:ml-0 ">
               <img src="img/trungching.png" class="md:w-auto w-[50%] h-auto" />
               <div class=" lg:my-auto mt-10 md:pl-10">
@@ -880,7 +912,7 @@
             </div>
           </div>
           <!-- Mobile -->
-          <div class="lg:flex justify-center items-center flex-wrap xl:hidden">
+          <div class="xl:flex justify-center items-center xl:hidden ">
             <div class="flex flex-wrap justify-center items-center mt-10"> 
                 <img src="img/kinhtrang.png" class=" w-[50%] md:w-auto " />
               
@@ -1045,8 +1077,8 @@
               </div>
             </div>
           </div>
-          <!-- Mobile -->
-          <div class="xl:flex flex-wrap mx-auto justify-between hidden">
+          <!-- Mobile2 -->
+          <div class="xl:flex flex-wrap mx-auto justify-between hidden xl:px-3 2xl:px-0">
             <div class="lg:flex mt-5">
               <div class="my-auto">
                 <p class="font-medium mb-2 text-[22px] font-roboto">
@@ -1225,7 +1257,7 @@
             <img src="img/baby-2.png" class="w-[100%]" />
           </div>
           <div class="mt-10 xl:block hidden">
-            <p class="font-medium xl:text-4xl text-xl font-roboto">
+            <p class="font-medium 2xl:text-4xl xl:text-3xl text-xl font-roboto">
               Dấu hiệu nhận biết chuyển dạ và sinh non:
             </p>
             <p class="text-[16px] mt-3 font-roboto">
@@ -1279,12 +1311,12 @@
               facilisis malesuada suscipit
             </p>
           </div>
-          <!-- mobile -->
+          <!-- mobile2 -->
         </div>
-        <div class="container xl:w-[50%] flex-col xl:mt-0 mt-10">
-          <img src="img/baby-1.png" class="w-[100%] xl:hidden md:px-0 px-3 lg:px-3" />
-          <div class="mt-5 xl:pl-8 px-3 xl:px-0">
-            <p class="font-medium xl:text-4xl text-xl font-roboto">
+        <div class="container xl:w-[50%] flex-col 2xl:mt-0 mt-10 xl:-mt-[60px]">
+          <img src="img/baby-1.png" class="w-[100%] xl:hidden md:px-0 px-3 lg:px-3 " />
+          <div class="2xl:mt-5 xl:pl-8 mt-20 px-4 ">
+            <p class="font-medium 2xl:text-4xl xl:text-3xl text-xl font-roboto">
               Chuyển dạ và sinh non có nguy hiểm?
             </p>
             <p class="font-medium mt-4 xl:text-[20px] text-lg font-roboto">
@@ -1329,13 +1361,13 @@
     </section>
     <!-- Giải pháp -->
     <section class="relative">
-      <div class="flex justify-center items-center mt-10">
+      <div class="flex justify-center items-center mt-10 ">
         <img src="img/bg-color-green.png" />
       </div>
-      <div class="container">
-        <div class="absolute xl:top-[150px] 2xl:top-40 top-0 xl:flex   xl:px-0 px-2">
+      <div class="container xl:px-4 2xl:px-0">
+        <div class="absolute xl:top-[150px] 2xl:top-40 top-0 xl:flex">
           <!-- mobile1 -->
-          <p class=" text-xl font-medium font-roboto xl:hidden mb-2 mt-10 md:pl-3">
+          <p class=" text-xl font-medium font-roboto xl:hidden mb-2 mt-5 md:pl-3 px-4">
             Giải pháp an toàn hãy lựa chọn dịch vụ thai
             sản trọn gói tại bệnh viện Phương Đông
           </p>
@@ -1384,7 +1416,7 @@
     </section>
     <!-- Lý do -->
     <section>
-      <div class="container xl:flex lg:mt-20 mt-[200px] sm:mt-0  px-2 xl:px-0 md:text-center xl:text-left">
+      <div class="container xl:flex lg:mt-20 mt-[200px] xl:mt-0 sm:mt-0  px-4 2xl:px-0 md:text-center xl:text-left">
         <div class="my-auto xl:w-[70%]">
           <h1 class="xl:text-4xl text-xl font-medium font-roboto">
             Tại sao bạn nên chọn gói dịch vụ thai sản<br/>
@@ -1456,8 +1488,8 @@
     </section>
     <!-- Hậu quả -->
     <section>
-      <div class="text-center">
-        <h1 class="xl:text-3xl text-xl font-medium font-roboto mt-10">
+      <div class="text-center px-4 2xl:px-0">
+        <h1 class="xl:text-3xl text-xl font-medium font-roboto mt-20">
           Hậu quả chuyển dạ và sinh non nếu không điều trị kịp thời
         </h1>
         <p class="font-roboto">
@@ -1467,7 +1499,7 @@
           facilisis malesuada suscipit mus
         </p>
       </div>
-      <div class="container lg:flex flex-wrap lg:justify-between mt-5 lg:space-x-5 xl:space-x-0 ">
+      <div class="container lg:flex justify-center  flex-wrap xl:justify-between mt-5 lg:space-x-5 xl:space-x-0 px-4 2xl:px-0">
         <div class="">
           <div class=" xl:block flex justify-center items-center">
             <img src="img/saythai.png" alt="" />
@@ -1500,7 +1532,7 @@
             </p>
           </div>
         </div>
-        <div class="xl:mt-0 mt-10 lg:mt-0 lg:mr-5 xl:mr-0">
+        <div class="xl:mt-0 mt-10 lg:mt-0 lg:mr-5 xl:mr-0 lg:hidden xl:block">
           <div class="xl:block flex justify-center items-center">
             <img src="img/nguyhiem.png" alt="" />
           </div>
@@ -1516,7 +1548,7 @@
             </p>
           </div>
         </div>
-        <div class="xl:mt-60 mt-10">
+        <div class="xl:mt-60 mt-10 lg:hidden xl:block">
           <div class="xl:block flex justify-center items-center">
             <img src="img/matkhanang.png" alt="" />
           </div>
@@ -1533,14 +1565,52 @@
           </div>
         </div>
       </div>
+
+      <!-- moblie -->
+      <div class="container flex justify-center items-center">
+        <div class=" mt-10  lg:block xl:hidden hidden">
+          <div class="xl:block flex justify-center items-center">
+            <img src="img/nguyhiem.png" alt="" />
+          </div>
+          <div class="xl:text-left text-center ">
+            <img src="img/eclip.png" class="mt-5 xl:block hidden" />
+            <h2 class="font-medium md:text-2xl text-lg xl:-mt-[20px] mt-2 font-roboto">
+              Nguy hiểm cho cả hai mẹ con
+            </h2>
+            <p class="mt-2 font-roboto">
+              Lorem ipsum dolor sit amet, consectetur<br />
+              adipiscing elit. Sapien, nec morbi mauris,<br />
+              turpis fringilla condimentum urna sagittis
+            </p>
+          </div>
+        </div>
+        <div class=" mt-10 ml-10 lg:block xl:hidden hidden">
+          <div class="xl:block flex justify-center items-center">
+            <img src="img/matkhanang.png" alt="" />
+          </div>
+          <div class="xl:text-left text-center">
+            <img src="img/eclip.png" class="mt-5 xl:block hidden" />
+            <h2 class="font-medium md:text-2xl text-lg xl:-mt-[20px] mt-2 font-roboto">
+              Gây mất khả năng sinh sản
+            </h2>
+            <p class="mt-2 font-roboto">
+              Lorem ipsum dolor sit amet, consectetur<br />
+              adipiscing elit. Sapien, nec morbi mauris,<br />
+              turpis fringilla condimentum urna sagittis
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     </section>
     <!-- footer -->
      <section>
       <div class="md:mt-10 ">
         <img src="img/footer.png" class="w-full" />
       </div>
-      <div class="bg-foot md:-mt-20 -mt-[10px]">
-        <div class="container lg:flex flex-wrap justify-between text-white text-center lg:text-left">
+      <div class="bg-foot md:-mt-20 lg:-mt-10 -mt-[10px]">
+        <div class="container lg:flex flex-wrap justify-between text-white text-center lg:text-left px-4 2xl:px-0">
           <div>
             <div class="flex lg:block justify-center items-center md:mt-10 lg:mt-0">
               <img src="img/Logo1.png" alt="" />
@@ -1559,12 +1629,12 @@
           <div>
             <h1 class="md:text-2xl text-lg font-medium font-roboto">Thông tin liên hệ</h1>
             <ul>
-              <li class="pb-3 font-roboto md:text-base text-xs">
+              <li class="pb-3 font-roboto md:text-base text-[11px]">
                 Địa chỉ:<span class="font-medium"
                   >Số 9, Phố Viên, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội</span
                 >
               </li>
-              <li class="pb-3 font-roboto md:text-base text-xs hover:font-bold">
+              <li class="pb-3 font-roboto md:text-base text-xs hover:text-blue-700">
                 <a href="https://mail.google.com/">
                    Email:<span class=""
                   >bvphuongdong@phuongdonghospital.vn</span
@@ -1572,11 +1642,11 @@
                 </a>
                
               </li>
-              <li class=" pb-3 font-roboto md:text-base text-xs hover:font-bold">
+              <li class=" pb-3 font-roboto md:text-base text-xs hover:text-blue-700">
                 <a href="https://mail.google.com/">info.benhvienphuongdong@gmail.com</a>
                 
               </li>
-              <li class="md:text-base text-xs font-roboto hover:font-bold">
+              <li class="md:text-base text-xs font-roboto hover:text-blue-700">
                 <a href="tel:+19001806"
                   >Tổng đài tư vấn:
                   <span class="font-medium font-roboto">19001806</span></a
@@ -1588,30 +1658,30 @@
             <h1 class="md:text-2xl font-medium font-roboto text-lg">Giờ làm việc</h1>
             <ul>
               <li class="pb-3 font-roboto md:text-base text-xs">Từ 7:00 - 19:00 từ Thứ 2 đến CN</li>
-              <li class="pb-3 font-roboto md:text-base text-xs hover:font-bold">
+              <li class="pb-3 font-roboto md:text-base text-xs hover:text-blue-700">
                 <a href="tel:+0833015115">
                   Cấp cứu 24/7: 0833 015 115
                 </a></li>
-              <li class="pb-3 font-roboto md:text-base text-xs hover:font-bold">
+              <li class="pb-3 font-roboto md:text-base text-xs hover:text-blue-700">
                 <a href="tel:+0911615115">
                   Hotline Tiêm chủng: 0911 615 115
                 </a></li>
-              <li class="pb-3 font-roboto md:text-base text-xs hover:font-bold">
+              <li class="pb-3 font-roboto md:text-base text-xs hover:text-blue-700">
                 <a href="tel:+19001806">Hotline Hỗ trợ khách hàng: 1900 1806</a>
               </li>
             </ul>
           </div>
           <div>
-            <h1 class="md:text-2xl font-medium font-roboto text-lg">Theo dõi chúng tôi</h1>
+            <h1 class="md:text-2xl font-medium font-roboto text-lg ">Theo dõi chúng tôi</h1>
             <div>
               <div class="flex lg:justify-between justify-center items-center space-x-2">
                 <a href="https://www.facebook.com/" class="border rounded-full w-[50px] h-[50px] flex justify-center items-center fb">
                   <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
                 </a>
-                <a href="https://www.youtube.com/" class="border rounded-full w-[50px] h-[50px] flex justify-center items-center fb">
+                <a href="https://www.youtube.com/" class="border rounded-full w-[50px] h-[50px] flex justify-center items-center hover:bg-red-600">
                   <i class="fa-brands fa-youtube fa-2x " style="color: #ffffff;"></i>
                 </a>
-                <a href="https://www.tiktok.com/" class="border rounded-full w-[50px] h-[50px] flex justify-center items-center fb">
+                <a href="https://www.tiktok.com/" class="border rounded-full w-[50px] h-[50px] flex justify-center items-center hover:bg-black">
                   <i class="fa-brands fa-tiktok fa-2x " style="color: #ffffff;"></i>
                 </a>
                 

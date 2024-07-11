@@ -89,6 +89,11 @@ var GUI = {
             slidesPerView: 3.5,
             spaceBetween: 30
           },
+          1366: {
+            slidesPerView: 3.5,
+            spaceBetween: 30
+          },
+
           
         },
         navigation: {
