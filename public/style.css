@@ -658,14 +658,14 @@ video {
   z-index: 10;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mx-auto {
@@ -1460,10 +1460,6 @@ video {
     padding-bottom: 4rem;
   }
 
-  .md\:pl-0 {
-    padding-left: 0px;
-  }
-
   .md\:pl-10 {
     padding-left: 2.5rem;
   }
@@ -1766,56 +1762,8 @@ video {
     margin-top: 15rem;
   }
 
-  .xl\:mt-\[64px\] {
-    margin-top: 64px;
-  }
-
-  .xl\:-mt-\[95px\] {
-    margin-top: -95px;
-  }
-
-  .xl\:mt-\[px\] {
-    margin-top: px;
-  }
-
-  .xl\:mt-\[50px\] {
-    margin-top: 50px;
-  }
-
   .xl\:mt-\[20px\] {
     margin-top: 20px;
-  }
-
-  .xl\:-mt-\[70px\] {
-    margin-top: -70px;
-  }
-
-  .xl\:-mt-\[50px\] {
-    margin-top: -50px;
-  }
-
-  .xl\:-mt-\[40px\] {
-    margin-top: -40px;
-  }
-
-  .xl\:-mt-\[10px\] {
-    margin-top: -10px;
-  }
-
-  .xl\:-mt-\[15px\] {
-    margin-top: -15px;
-  }
-
-  .xl\:-mt-\[25px\] {
-    margin-top: -25px;
-  }
-
-  .xl\:-mt-\[30px\] {
-    margin-top: -30px;
-  }
-
-  .xl\:-mt-\[1px\] {
-    margin-top: -1px;
   }
 
   .xl\:block {
@@ -1953,12 +1901,6 @@ video {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 1366px) {
-  .\31 366\:-mt-\[75px\] {
-    margin-top: -75px;
   }
 }
 

@@ -73,6 +73,7 @@
 
 .bg-bt {
   background: linear-gradient(180deg, #FFB469 0%, #E57709 100%);
+  transition-duration: 1s;
 }
 .txt {
   color: #F7A14B;
@@ -84,9 +85,8 @@
     background: linear-gradient(180deg, #FFB469 0%, #E57709 100%);
 }
 
-.btn:hover {
-  background: linear-gradient(180deg, #be6a15 50%, #c58340 100%);
-  transition: 1s;
+.bg-bt:hover {
+  background: #0585c0;
 }
 
 
