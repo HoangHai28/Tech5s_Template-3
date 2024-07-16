@@ -1620,6 +1620,11 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .lg\:pl-0 {
     padding-left: 0px;
   }
@@ -1790,6 +1795,14 @@ video {
 
   .xl\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .xl\:-mt-\[80px\] {
+    margin-top: -80px;
+  }
+
+  .xl\:-mt-\[35px\] {
+    margin-top: -35px;
   }
 
   .xl\:block {
