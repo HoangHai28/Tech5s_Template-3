@@ -1809,6 +1809,10 @@ video {
     margin-top: -38px;
   }
 
+  .xl\:-mt-\[39px\] {
+    margin-top: -39px;
+  }
+
   .xl\:block {
     display: block;
   }
